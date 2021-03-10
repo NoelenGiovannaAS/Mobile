@@ -14,7 +14,7 @@
     </ion-header>
 
     <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>-->
+</ion-content>
 
 <ion-header>
     <ion-toolbar color="light">
@@ -23,7 +23,7 @@
         </ion-title>
     </ion-toolbar>
 </ion-header>
-<!--rolável-->
+rolável
 <ion-content color="light" class="ion-patting">
     <ion-text color="medium">Texto apagadinho</ion-text>
     <ion-grid>
@@ -53,4 +53,87 @@
     <ion-icon name="add"></ion-icon>
 
 
+</ion-content>-->
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Travel App
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <h1><strong>Hi, Mike<br>
+    Where do you want to go?</strong></h1>
+
+    <!-- <ion-input placeholder="Enter Input"></ion-input> -->
+    <ion-item>
+        <ion-icon name="location"></ion-icon>
+        <ion-input></ion-input>
+        <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <h3><strong>Daily Scenery</strong></h3>
+            </ion-col>
+            <ion-col>
+                <ion-text color="primary"><small>Updated</small></ion-text>
+            </ion-col>
+            <ion-col>
+                <ion-text color="light">More</ion-text>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-card>
+        <img width=1000 height=300 src="https://images.pexels.com/photos/707712/pexels-photo-707712.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        <ion-grid>
+            <ion-row>
+                <ion-col size=8>
+                    <ion-text color="ligth">2021.03.10</ion-text>
+                    Santa Barbara, EUA
+                </ion-col>
+                <ion-col>
+                    <ion-avatar><img src="https://thispersondoesnotexist.com/image"></ion-avatar>
+
+                </ion-col>
+                <ion-col>
+                    <ion-avatar><img src="https://thispersondoesnotexist.com/image"></ion-avatar>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <h3><strong>City</strong></h3>
+            </ion-col>
+            <ion-col>
+                <ion-badge color="primary">Hot</ion-badge>
+            </ion-col>
+            <ion-col>
+                <ion-text color="light">More</ion-text>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-card>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-card><img src="https://images.pexels.com/photos/3149896/pexels-photo-3149896.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt=""></ion-card>
+                    <iont-text>teste 1</iont-text>
+                </ion-col>
+                <ion-col>
+                    <ion-card><img src="https://images.pexels.com/photos/3149903/pexels-photo-3149903.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt=""></ion-card>
+                    <iont-text>teste 1</iont-text>
+                </ion-col>
+                <ion-col>
+                    <ion-card><img src="https://images.pexels.com/photos/3153500/pexels-photo-3153500.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt=""></ion-card>
+                    <iont-text>teste 1</iont-text>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
 </ion-content>
