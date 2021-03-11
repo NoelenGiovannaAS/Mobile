@@ -1,47 +1,15 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
         <ion-title>
-            Bank
+            Form
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <!-- <h1>Seu saldo atual está {{ current >= 0? 'positivo':'negativo'}}</h1> -->
-
-    <h1>Your current bank balance is: {{current}} </h1>
-    <!-- <ion-progress-bar color="primary" [value]="currentValue / 100">teste</ion-progress-bar> -->
-
-    <h1>Your bank balance is
-        <ion-text [color]="current >= 0? 'success' : 'danger'">{{ current >= 0? 'positive':'negative'}}</ion-text>
-    </h1>
-
-    <ion-item>
-        <ion-label></ion-label>
-        <ion-input [(ngModel)]="cash" type='number'></ion-input>
-    </ion-item>
-
-
-    <!-- <ion-button (click)="increment()">Você clicou {{currentValue}} vezes</ion-button> -->
-    <ion-grid>
-        <ion-row>
-            <ion-col>
-                <ion-button (click)="deposit()">Deposit</ion-button>
-            </ion-col>
-            <ion-col>
-                <ion-button (click)="withdraw()">Withdraw</ion-button>
-            </ion-col>
-            <ion-col>
-                <ion-button (click)="getItAll()">Get it all</ion-button>
-            </ion-col>
-            <ion-col>
-                <ion-button (click)="erase()">Erase</ion-button>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
-
-
-    <!--<ion-item>
+    <h1>teste
+        <h1>
+            <!--<ion-item>
         <ion-label>Jon Snow</ion-label>
         <ion-checkbox slot="start"></ion-checkbox>
     </ion-item>
@@ -57,7 +25,8 @@
         <ion-checkbox slot="start"></ion-checkbox>
         <ion-label>Tyrion Lannister</ion-label>
     </ion-item>
-    <ion-item>
+-->
+            <!--<ion-item>
         <ion-label position="floating">Description</ion-label>
         <ion-textarea>
             <ion-input {(ngModel)}="cash"></ion-input>
@@ -65,7 +34,7 @@
     </ion-item>
 -->
 
-    <ion-list>
+            <!--<ion-list>
         <ion-item>
             <ion-label>
                 Teste
@@ -73,8 +42,8 @@
             <ion-toggle [(ngModel)]="accept"></ion-toggle>
         </ion-item>
     </ion-list>
-
-    <p>Método Selecionado: {{ paymentMethod}}</p>
+-->
+            <!--<p>Método Selecionado: {{ paymentMethod}}</p>
     <ion-radio-group [(ngModel)]="paymentMethod">
         <ion-item>
             <ion-label>Money</ion-label>
@@ -89,15 +58,15 @@
             <ion-radio slot="start" value="debit"></ion-radio>
         </ion-item>
     </ion-radio-group>
+-->
 
-
-    <ion-item>
+            <!--<ion-item>
         <ion-label>Método Selecionado</ion-label>
         <ion-select placeholder="Select One">
             <ion-select-option value="cash"> Dinheiro </ion-select-option>
             <ion-select-option value="debit"> Débito </ion-select-option>
             <ion-select-option value="credit"> Crédito </ion-select-option>
         </ion-select>
-    </ion-item>
+    </ion-item>-->
 
 </ion-content>

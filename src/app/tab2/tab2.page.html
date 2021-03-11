@@ -1,17 +1,33 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Aula 3- Dispositivos Móveis
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <h1>Você está com o saldo {{ currentValue >= 0? 'positivo':'negativo'}}</h1>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <h1>Você tem {{ currentValue}} mensagens não lidas.</h1>
+
+    <p>
+        <!-- Debug {{jsonExemplo | json}} -->
+    </p>
+
+    <ion-progress-bar color="primary" [value]="currentValue / 100">teste</ion-progress-bar>
+
+    <h1>Você está com o saldo
+        <ion-text [color]="currentValue >= 0? 'sucess' : 'danger'">{{ currentValue >= 0? 'positivo':'negativo'}}</ion-text>
+
+    </h1>
+    <ion-button (click)="increment()">Você clicou {{currentValue}} vezes</ion-button>
+
+    <ion-button (click)="increment()">More</ion-button>
+    <ion-button (click)="decrement()">Less</ion-button>
+    <ion-button (click)="reset()">Reset</ion-button>
+    <ion-button (click)="full()">Full</ion-button>
+    <H1>The current Value is: {{currentValue}}</H1>
+    <H1>The maximmum value was: {{maxValue}}</H1>
+
 </ion-content>
